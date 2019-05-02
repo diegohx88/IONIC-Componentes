@@ -18,10 +18,14 @@ export class ActionSheetPage implements OnInit {
 	async presentActionSheet() {
 		const actionSheet = await this.actionSheetController.create({
 			header: 'Albums',
-			buttons: [{
+			backdropDismiss:false,
+			buttons: [
+			{
 				text: 'Delete',
 				role: 'destructive',
 				icon: 'trash',
+				//Atributo con el nombre de la clase rojo personalizada
+				cssClass:'rojo',
 				//handler es lo que va hacer cuando se presiona los botones
 				handler: () => {
 					console.log('Delete clicked');
