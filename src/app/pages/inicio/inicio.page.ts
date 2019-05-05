@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class InicioPage implements OnInit {
 
   componentes:Componente [] = [
+  //redirecTo hace referencia al path en el archivo app-routing.module.ts
   {
   	icon: 'american-football',
   	name: 'Action Sheet',
@@ -17,6 +18,11 @@ export class InicioPage implements OnInit {
   	icon: 'appstore',
   	name: 'Alert',
   	redirecTo: '/alert'
+  },
+  {
+    icon: 'beaker',
+    name: 'Avatar',
+    redirecTo: '/avatar'
   }
 
   ];

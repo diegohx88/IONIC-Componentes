@@ -1,0 +1,37 @@
+<ion-header>
+	<ion-toolbar>
+		<!-- Ion button crea una cabecera de botones start es q se coloque al incio desde la izquierda -->
+		<ion-buttons slot="start">
+			<!-- default href es usado para que siempre aparezca el boton de regresar -->
+			<ion-back-button defaultHref="/"></ion-back-button>
+		</ion-buttons>
+		<ion-title>Avatar</ion-title>
+		<!-- colocamos un segmento para colocar el avatar en el costado derecho "end" -->
+		<ion-buttons slot="end">
+			<ion-avatar>
+				<img src="/assets/stan-lee.jpg">
+			</ion-avatar>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-chip color="primary" *ngFor="let i of [1,1,1,1,1]">
+		<ion-avatar>
+			<img src="/assets/stan-lee.jpg">
+		</ion-avatar>
+		<ion-label>
+			Stan Lee
+		</ion-label>
+	</ion-chip>
+	<ion-list>
+		<ion-item *ngFor="let i of [1,1,1,1,1]">
+			<ion-avatar slot="start">
+				<img src="/assets/stan-lee.jpg">
+			</ion-avatar>
+			<ion-label>
+				Stan Lee
+			</ion-label>
+		</ion-item>
+	</ion-list>
+</ion-content>
